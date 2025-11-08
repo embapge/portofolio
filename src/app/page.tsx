@@ -1,15 +1,4 @@
 import { ServiceCard } from "@/components/Card/ServiceCard";
-import { DM_Serif_Display, Inter_Tight } from "next/font/google";
-
-const dmSerifDisplay = DM_Serif_Display({
-  weight: "400",
-  //   variable: "--font-dm-serif-display",
-});
-
-const interTight = Inter_Tight({
-  weight: "600",
-  //   variable: "--font-inter-tight",
-});
 
 export default function Home() {
   return (
@@ -30,14 +19,10 @@ export default function Home() {
           className={`flex flex-col items-center justify-center mb-20`}
         >
           <div className="service-title w-[300px]">
-            <small className={`${interTight.className}`}>
+            <small>
               My <span className={`text-(--secondary)`}>Services</span>
             </small>
-            <h2
-              className={`${dmSerifDisplay.className} text-shadow-lg text-shadow-red-700`}
-            >
-              What I Do?
-            </h2>
+            <h2 className={`text-shadow-lg text-shadow-red-700`}>What I Do?</h2>
           </div>
         </section>
         <section className="w-[90vw] mx-auto">

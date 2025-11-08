@@ -1,13 +1,6 @@
 "use client";
 
-import { DM_Serif_Display } from "next/font/google";
 import { useEffect, useState } from "react";
-
-const dmSerifDisplay = DM_Serif_Display({
-  weight: "400",
-  //   variable: "--font-dm-serif-display",
-});
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -27,8 +20,8 @@ const Navbar = () => {
   return (
     <nav
       className={`px-4 py-3 transition-all duration-300 z-50 w-full ${
-        dmSerifDisplay.className
-      } ${isScrolled ? "fixed top-0 shadow-lg backdrop-blur" : "fixed top-0"}`}
+        isScrolled ? "fixed top-0 shadow-lg backdrop-blur" : "fixed top-0"
+      }`}
       style={{ fontWeight: "600" }}
     >
       <ul className={`flex space-x-10 py-1 px-3 justify-center`}>
