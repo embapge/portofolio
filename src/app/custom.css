@@ -1,0 +1,9 @@
+.service-card {
+  transition: transform 0.3s ease;
+  background-color: rgba(207, 10, 10, 0.2);
+  border: 1px solid rgba(207, 10, 10, 0.4);
+}
+.service-card.hover {
+  transform: scale(1.05);
+  background-color: rgba(207, 10, 10, 0.4);
+}
